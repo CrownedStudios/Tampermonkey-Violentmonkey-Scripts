@@ -77,7 +77,9 @@ function removeElementsAndChangeText() {
     });
 }
 
-showCustomAlert();
+if (!alertSent) {
+    showCustomAlert();
+}
 
 setInterval(function() {
     removeElementsAndChangeText();
