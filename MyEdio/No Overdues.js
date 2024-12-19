@@ -1,8 +1,13 @@
+let alertSent = false;
+
 function showCustomAlert() {
+    if (alertSent) return;
+    alertSent = true;
+
     const alertContainer = document.createElement('div');
     alertContainer.style.position = 'fixed';
     alertContainer.style.right = '-400px';
- //   alertContainer.style.top = '20px';
+    alertContainer.style.bottom = '20px';
     alertContainer.style.backgroundColor = 'rgba(50, 50, 50, 0.95)';
     alertContainer.style.color = '#ffffff';
     alertContainer.style.padding = '15px 25px';
@@ -11,7 +16,7 @@ function showCustomAlert() {
     alertContainer.style.fontFamily = 'Arial, Helvetica, sans-serif';
     alertContainer.style.fontSize = '16px';
     alertContainer.style.zIndex = '1000';
-    alertContainer.style.transition = 'right 0.6s ease-in-out';
+    alertContainer.style.transition = 'right 0.6s ease-in-out, opacity 0.5s ease-in-out';
 
     const alertText = document.createElement('div');
     alertText.textContent = 'Script Loaded Successfully!';
@@ -38,7 +43,10 @@ function showCustomAlert() {
     dismissButton.style.cursor = 'pointer';
     dismissButton.style.fontSize = '14px';
     dismissButton.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
-    dismissButton.onclick = () => alertContainer.remove();
+    dismissButton.onclick = () => {
+        alertContainer.style.opacity = '0';
+        setTimeout(() => alertContainer.remove(), 500);
+    };
     alertContainer.appendChild(dismissButton);
 
     document.body.appendChild(alertContainer);
@@ -48,10 +56,8 @@ function showCustomAlert() {
     }, 100);
 
     setTimeout(() => {
-        alertContainer.style.right = '-400px';
-        setTimeout(() => {
-            alertContainer.remove();
-        }, 600);
+        alertContainer.style.opacity = '0';
+        setTimeout(() => alertContainer.remove(), 500);
     }, 3000);
 }
 
