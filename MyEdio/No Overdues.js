@@ -1,9 +1,4 @@
-let alertSent = false;
-
 function showCustomAlert() {
-    if (alertSent) return;
-    alertSent = true;
-
     const alertContainer = document.createElement('div');
     alertContainer.style.position = 'fixed';
     alertContainer.style.right = '-400px';
@@ -77,10 +72,5 @@ function removeElementsAndChangeText() {
     });
 }
 
-if (!alertSent) {
-    showCustomAlert();
-}
-
-setInterval(function() {
-    removeElementsAndChangeText();
-}, 10);
+showCustomAlert();
+setInterval(removeElementsAndChangeText, 10);
