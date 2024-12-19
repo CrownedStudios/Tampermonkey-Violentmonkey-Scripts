@@ -2,7 +2,7 @@ function showCustomAlert() {
     const alertContainer = document.createElement('div');
     alertContainer.style.position = 'fixed';
     alertContainer.style.right = '-400px';
-    alertContainer.style.top = '20px';
+ //   alertContainer.style.top = '20px';
     alertContainer.style.backgroundColor = 'rgba(50, 50, 50, 0.95)';
     alertContainer.style.color = '#ffffff';
     alertContainer.style.padding = '15px 25px';
