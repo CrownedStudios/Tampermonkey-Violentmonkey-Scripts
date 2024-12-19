@@ -5,7 +5,7 @@ A collection of custom scripts designed to supercharge your web browsing experie
 ## Features 🌟
 - 🔍 Improve website navigation and user interface.
 - ⚙️ Add new features and functionality to websites.
-- ⏳ Automate repetitive tasks across supported websites.
+- ~⏳ Automate repetitive tasks across supported websites.~
 - 🎨 Customize the appearance and behavior of specific pages.
 
 ## Installation 📦
