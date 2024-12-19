@@ -15,7 +15,7 @@ A collection of custom scripts designed to supercharge your web browsing experie
 4. Browse through the scripts by me or other community members and choose one you'd like to install! 📝
 
 ### Latest Script 🔥
-You can install my latest script, [No Overdues!](https://update.greasyfork.org/scripts/521168/No%20Overdues%21.user.js), by clicking the link. Say goodbye to overdue tasks! ⏰✅
+You can install my latest script, [No Overdues!](https://update.greasyfork.org/scripts/521168/No%20Overdues%21.user.js), by clicking the link. Say goodbye to overdue work! ⏰✅
 
 ## Supported Sites 🌍
 - 🖥️ Currently, I'm still working on creating scripts for various websites. Stay tuned for more! 💡
